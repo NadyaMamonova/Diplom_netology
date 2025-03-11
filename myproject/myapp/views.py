@@ -1,4 +1,3 @@
-#from distutils.util import strtobool
 from rest_framework.request import Request
 from django.contrib.auth import authenticate
 from django.contrib.auth.password_validation import validate_password
@@ -21,12 +20,6 @@ from myproject.myapp.serializers import UserSerializer, CategorySerializer, Prod
     ShopSerializer, ContactSerializer, OrderItemSerializer
 from myproject.myapp.signals import new_order
 
-
-# from myapp.models import Shop, Category, Product, ProductInfo, Parameter, ProductParameter, Order, OrderItem, \
-#     Contact, ConfirmEmailToken
-# from myapp.serializers import UserSerializer, CategorySerializer, ShopSerializer, ProductInfoSerializer, \
-#     OrderItemSerializer, OrderSerializer, ContactSerializer
-# from myapp.signals import new_user_registered, new_order
 
 
 class RegisterAccount(APIView):
